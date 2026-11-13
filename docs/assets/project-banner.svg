@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tax Task Agent</title>
+  <desc id="desc">Financial queries, controlled writes and durable tasks. A Python, Streamlit and LangGraph project.</desc>
+  <rect width="1280" height="320" rx="20" fill="#102638"/>
+  <circle cx="1170" cy="40" r="240" fill="#163c4b"/>
+  <path d="M960 100h155v155H960z" fill="none" stroke="#7ce8cf" stroke-width="3"/>
+  <path d="M990 140h95m-95 35h70m-70 35h85" stroke="#7ce8cf" stroke-width="5" stroke-linecap="round"/>
+  <text x="64" y="65" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="3" fill="#7ce8cf">VICTORYLOSER / AI SYSTEMS</text>
+  <text x="60" y="145" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="700" fill="#f3f9fc">Tax Task Agent</text>
+  <text x="64" y="197" font-family="Segoe UI,Arial,sans-serif" font-size="24" fill="#b9cddc">Financial queries. Controlled writes. Durable tasks.</text>
+  <text x="64" y="263" font-family="Segoe UI,Arial,sans-serif" font-size="18" fill="#7ce8cf">PYTHON  /  STREAMLIT  /  LANGGRAPH  /  SQLITE + POSTGRESQL</text>
+</svg>

@@ -1,0 +1,16 @@
+[Unit]
+Description=Tax Agent persistent queue workers
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tax-agent
+ExecStart=/opt/tax-agent/.venv/bin/python -m tax_agent.runtime.service --workers 2
+Environment=PYTHONUTF8=1
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+
+[Install]
+WantedBy=multi-user.target

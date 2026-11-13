@@ -1,0 +1,11 @@
+{
+  "rule_id": "R002",
+  "version": "3.0",
+  "name": "甲企业用途填写规则（十月演示草稿）",
+  "content": "自2026年10月1日起，甲企业价税合计大于等于1000元的发票必须填写用途；备注不视为用途。此为演示规则草稿，须管理员审核后激活。",
+  "condition": {"kind": "amount_gte_cents", "amount_cents": 100000},
+  "enterprise_ids": ["C001"],
+  "effective_from": "2026-10-01",
+  "effective_to": null,
+  "source": "docs/example-rule.json：规则生命周期示例"
+}

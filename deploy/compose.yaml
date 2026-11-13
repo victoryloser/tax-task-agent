@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: tax_agent
+      POSTGRES_DB: tax_agent
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a database password}
+    ports:
+      - "${PG_BIND_ADDRESS:-127.0.0.1}:5432:5432"
+    volumes:
+      - tax_agent_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tax_agent -d tax_agent"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  tax_agent_pg:
